@@ -1,16 +1,5 @@
 'use client';
-
 import { useCallback, useEffect, useRef, useState } from 'react';
-
-/**
- * A highly reusable client-side component for creating horizontal-scrolling carousels.
- * It manages scroll state, button disabling, and optional progress bar functionality.
- *
- * @param {object} props - The component props.
- * @param {React.ReactNode} props.children - The content to be rendered inside the carousel.
- * @param {number|function} props.scrollAmount - The distance to scroll per click. Can be a number or a function that takes the container element.
- * @param {boolean} [props.showProgressBar=false] - Whether to display a scroll progress bar.
- */
 export default function Carousel({ children, scrollAmount, showProgressBar = false }) {
   const containerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
