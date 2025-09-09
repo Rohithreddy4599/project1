@@ -1,8 +1,3 @@
-
-// You would typically install and import these, but for this self-contained example,
-// we'll assume they are available.
-// For the purpose of this file, the components will be treated as if they are
-// defined within this file.
 const Button = ({ children, variant, size, className, ...props }) => (
   <button className={`p-2 rounded-md ${className}`} {...props}>{children}</button>
 );
@@ -15,8 +10,6 @@ const Card = ({ children, className }) => (
 const CardContent = ({ children, className }) => (
   <div className={`p-4 ${className}`}>{children}</div>
 );
-
-// Icon components as inline SVGs to avoid external dependencies
 const Heart = (props) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart">
     <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.76-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
