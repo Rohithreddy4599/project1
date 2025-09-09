@@ -1,14 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-
-/**
- * A client-side component for handling mobile navigation.
- * It manages the state of the mobile menu and toggles it on a button click.
- */
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     console.log('Mobile menu button clicked!');
