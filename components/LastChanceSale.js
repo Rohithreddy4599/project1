@@ -36,7 +36,6 @@ export default function LastChanceSale() {
                     </div>
                 </div>
 
-                {/* Horizontally Scrollable Product Container */}
                 <div ref={scrollContainerRef} className="flex overflow-x-auto space-x-4 pb-4 custom-scrollbar scroll-smooth">
                     {/* All your product cards go here... */}
                     {/* For brevity, only showing the first card */}
@@ -59,7 +58,6 @@ export default function LastChanceSale() {
                             <p className="text-xs text-gray-500 mt-1">55% OFF RRP</p>
                         </div>
                     </div>
-                    {/* ... PASTE THE OTHER 5 PRODUCT CARDS HERE ... */}
                 </div>
             </div>
         </div>
